@@ -11,7 +11,7 @@
 </script>
 
 {#key page.url.pathname}
-	<div in:fly={{ y: 15, duration: 400, delay: 100 }} out:fly={{ y: -10, duration: 200 }}>
+	<div in:fly={{ y: 15, duration: 400, delay: 100 }}>
 		{@render children()}
 	</div>
 {/key}
