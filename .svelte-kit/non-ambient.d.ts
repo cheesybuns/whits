@@ -27,15 +27,23 @@ export {};
 
 declare module "$app/types" {
 	export interface AppTypes {
-		RouteId(): "/";
+		RouteId(): "/" | "/about" | "/contact" | "/digital-art" | "/fine-art" | "/music" | "/pastry" | "/photography" | "/tattoo";
 		RouteParams(): {
 			
 		};
 		LayoutParams(): {
-			"/": Record<string, never>
+			"/": Record<string, never>;
+			"/about": Record<string, never>;
+			"/contact": Record<string, never>;
+			"/digital-art": Record<string, never>;
+			"/fine-art": Record<string, never>;
+			"/music": Record<string, never>;
+			"/pastry": Record<string, never>;
+			"/photography": Record<string, never>;
+			"/tattoo": Record<string, never>
 		};
 		Pathname(): "/";
 		ResolvedPathname(): `${"" | `/${string}`}${ReturnType<AppTypes['Pathname']>}`;
-		Asset(): "/robots.txt" | string & {};
+		Asset(): "/favicon.svg" | "/robots.txt" | string & {};
 	}
 }

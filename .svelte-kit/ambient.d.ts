@@ -27,8 +27,8 @@
  */
 declare module '$env/static/private' {
 	export const SHELL: string;
+	export const npm_command: string;
 	export const LSCOLORS: string;
-	export const COREPACK_ENABLE_AUTO_PIN: string;
 	export const USER_ZDOTDIR: string;
 	export const ITERM_PROFILE: string;
 	export const COLORTERM: string;
@@ -36,7 +36,6 @@ declare module '$env/static/private' {
 	export const XPC_FLAGS: string;
 	export const NVM_INC: string;
 	export const TERM_PROGRAM_VERSION: string;
-	export const JOBS: string;
 	export const TERM_FEATURES: string;
 	export const NODE: string;
 	export const __CFBundleIdentifier: string;
@@ -50,13 +49,10 @@ declare module '$env/static/private' {
 	export const PWD: string;
 	export const LOGNAME: string;
 	export const GK_GL_PATH: string;
-	export const BUN_WHICH_IGNORE_CWD: string;
 	export const LaunchInstanceID: string;
 	export const GK_GL_ADDR: string;
 	export const _: string;
-	export const NoDefaultCurrentDirectoryInExePath: string;
 	export const VSCODE_GIT_ASKPASS_NODE: string;
-	export const CLAUDECODE: string;
 	export const VSCODE_INJECTION: string;
 	export const COMMAND_MODE: string;
 	export const ITERM_SESSION_ID: string;
@@ -69,8 +65,8 @@ declare module '$env/static/private' {
 	export const TMPDIR: string;
 	export const GIT_ASKPASS: string;
 	export const LC_TERMINAL: string;
-	export const INIT_CWD: string;
 	export const INFOPATH: string;
+	export const npm_lifecycle_script: string;
 	export const NVM_DIR: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const VSCODE_PYTHON_AUTOACTIVATE_GUARD: string;
@@ -87,17 +83,15 @@ declare module '$env/static/private' {
 	export const COLORFGBG: string;
 	export const HOMEBREW_CELLAR: string;
 	export const LC_TERMINAL_VERSION: string;
+	export const npm_lifecycle_event: string;
 	export const SHLVL: string;
 	export const NVM_CD_FLAGS: string;
-	export const GIT_EDITOR: string;
 	export const PAGER: string;
 	export const HOMEBREW_REPOSITORY: string;
 	export const XPC_SERVICE_NAME: string;
 	export const npm_config_user_agent: string;
 	export const TERMINFO_DIRS: string;
-	export const OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE: string;
 	export const npm_execpath: string;
-	export const CLAUDE_CODE_ENTRYPOINT: string;
 	export const npm_package_json: string;
 	export const BUN_INSTALL: string;
 	export const VSCODE_GIT_ASKPASS_MAIN: string;
@@ -107,6 +101,7 @@ declare module '$env/static/private' {
 	export const OLDPWD: string;
 	export const __CF_USER_TEXT_ENCODING: string;
 	export const TERM_PROGRAM: string;
+	export const NODE_ENV: string;
 }
 
 /**
@@ -137,8 +132,8 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		SHELL: string;
+		npm_command: string;
 		LSCOLORS: string;
-		COREPACK_ENABLE_AUTO_PIN: string;
 		USER_ZDOTDIR: string;
 		ITERM_PROFILE: string;
 		COLORTERM: string;
@@ -146,7 +141,6 @@ declare module '$env/dynamic/private' {
 		XPC_FLAGS: string;
 		NVM_INC: string;
 		TERM_PROGRAM_VERSION: string;
-		JOBS: string;
 		TERM_FEATURES: string;
 		NODE: string;
 		__CFBundleIdentifier: string;
@@ -160,13 +154,10 @@ declare module '$env/dynamic/private' {
 		PWD: string;
 		LOGNAME: string;
 		GK_GL_PATH: string;
-		BUN_WHICH_IGNORE_CWD: string;
 		LaunchInstanceID: string;
 		GK_GL_ADDR: string;
 		_: string;
-		NoDefaultCurrentDirectoryInExePath: string;
 		VSCODE_GIT_ASKPASS_NODE: string;
-		CLAUDECODE: string;
 		VSCODE_INJECTION: string;
 		COMMAND_MODE: string;
 		ITERM_SESSION_ID: string;
@@ -179,8 +170,8 @@ declare module '$env/dynamic/private' {
 		TMPDIR: string;
 		GIT_ASKPASS: string;
 		LC_TERMINAL: string;
-		INIT_CWD: string;
 		INFOPATH: string;
+		npm_lifecycle_script: string;
 		NVM_DIR: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		VSCODE_PYTHON_AUTOACTIVATE_GUARD: string;
@@ -197,17 +188,15 @@ declare module '$env/dynamic/private' {
 		COLORFGBG: string;
 		HOMEBREW_CELLAR: string;
 		LC_TERMINAL_VERSION: string;
+		npm_lifecycle_event: string;
 		SHLVL: string;
 		NVM_CD_FLAGS: string;
-		GIT_EDITOR: string;
 		PAGER: string;
 		HOMEBREW_REPOSITORY: string;
 		XPC_SERVICE_NAME: string;
 		npm_config_user_agent: string;
 		TERMINFO_DIRS: string;
-		OTEL_EXPORTER_OTLP_METRICS_TEMPORALITY_PREFERENCE: string;
 		npm_execpath: string;
-		CLAUDE_CODE_ENTRYPOINT: string;
 		npm_package_json: string;
 		BUN_INSTALL: string;
 		VSCODE_GIT_ASKPASS_MAIN: string;
@@ -217,6 +206,7 @@ declare module '$env/dynamic/private' {
 		OLDPWD: string;
 		__CF_USER_TEXT_ENCODING: string;
 		TERM_PROGRAM: string;
+		NODE_ENV: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
