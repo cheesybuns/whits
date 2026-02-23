@@ -1,0 +1,76 @@
+@import './variables.css';
+@import './typography.css';
+@import './textures.css';
+@import './decorative.css';
+@import './animations.css';
+@import './utilities.css';
+
+/* === Reset === */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	scroll-behavior: auto; /* Lenis handles smooth scroll */
+}
+
+body {
+	font-family: var(--font-body);
+	font-size: var(--text-base);
+	line-height: var(--leading-normal);
+	color: var(--color-ink-primary);
+	background-color: var(--color-bg-primary);
+	overflow-x: hidden;
+}
+
+img,
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button {
+	font: inherit;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* === Layout === */
+.page-wrapper {
+	position: relative;
+	min-height: 100vh;
+	min-height: 100dvh;
+}
+
+.container {
+	width: 100%;
+	max-width: var(--max-width);
+	margin-inline: auto;
+	padding-inline: var(--gutter);
+}
+
+.container--narrow {
+	max-width: var(--narrow-width);
+}
+
+.container--content {
+	max-width: var(--content-width);
+}

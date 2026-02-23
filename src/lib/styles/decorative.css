@@ -1,0 +1,46 @@
+.ink-splatter {
+	position: absolute;
+	pointer-events: none;
+	opacity: 0.07;
+	z-index: 0;
+}
+
+.brush-accent {
+	position: relative;
+	display: inline-block;
+}
+
+.brush-accent::after {
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: -5%;
+	width: 110%;
+	height: 14px;
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,8 C20,3 40,10 60,6 S100,2 120,7 S160,10 180,5 L200,7' stroke='%232c2c2c' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+	background-size: contain;
+	background-repeat: no-repeat;
+	opacity: 0.25;
+}
+
+.tape-strip {
+	position: absolute;
+	width: 80px;
+	height: 26px;
+	background: rgba(255, 245, 220, 0.6);
+	border: 1px solid rgba(200, 180, 140, 0.3);
+	transform: rotate(-3deg);
+	top: -13px;
+	left: 50%;
+	translate: -50% 0;
+	z-index: 2;
+}
+
+.border-sketch {
+	border: var(--border-sketch);
+	border-radius: var(--radius-rough);
+}
+
+.tilt-slight {
+	transform: rotate(var(--tilt, -1deg));
+}

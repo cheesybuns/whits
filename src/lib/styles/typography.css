@@ -1,0 +1,51 @@
+.text-hand {
+	font-family: var(--font-hand);
+	font-weight: 700;
+	line-height: var(--leading-tight);
+}
+
+.text-display {
+	font-family: var(--font-display);
+	font-weight: 700;
+	line-height: var(--leading-tight);
+}
+
+.text-annotation {
+	font-family: var(--font-hand);
+	font-size: var(--text-xl);
+	transform: rotate(-2deg);
+	display: inline-block;
+}
+
+h1,
+.h1 {
+	font-family: var(--font-hand);
+	font-size: clamp(var(--text-5xl), 8vw, var(--text-8xl));
+	font-weight: 700;
+	line-height: var(--leading-tight);
+	letter-spacing: -0.02em;
+}
+
+h2,
+.h2 {
+	font-family: var(--font-display);
+	font-size: clamp(var(--text-3xl), 5vw, var(--text-5xl));
+	font-weight: 700;
+	line-height: var(--leading-snug);
+}
+
+h3,
+.h3 {
+	font-family: var(--font-hand);
+	font-size: clamp(var(--text-2xl), 3vw, var(--text-3xl));
+	font-weight: 600;
+	line-height: var(--leading-snug);
+}
+
+h4,
+.h4 {
+	font-family: var(--font-display);
+	font-size: var(--text-xl);
+	font-weight: 600;
+	line-height: var(--leading-snug);
+}

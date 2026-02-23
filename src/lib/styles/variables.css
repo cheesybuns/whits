@@ -1,0 +1,94 @@
+:root {
+	/* === Color Palette === */
+	--color-bg-primary: #f5f0e8;
+	--color-bg-secondary: #ede6d8;
+	--color-bg-accent: #e8dcc8;
+
+	--color-ink-primary: #2c2c2c;
+	--color-ink-secondary: #5a5a5a;
+	--color-ink-light: #8a8a8a;
+
+	--color-accent-rose: #c4626a;
+	--color-accent-ochre: #c49a3c;
+	--color-accent-sage: #7a9e7e;
+	--color-accent-slate: #6b8fa3;
+	--color-accent-plum: #8b6b8a;
+	--color-accent-terracotta: #b87444;
+
+	--color-cat-digital: var(--color-accent-slate);
+	--color-cat-tattoo: var(--color-ink-primary);
+	--color-cat-pastry: var(--color-accent-ochre);
+	--color-cat-photo: var(--color-accent-sage);
+	--color-cat-fineart: var(--color-accent-rose);
+	--color-cat-music: var(--color-accent-plum);
+
+	/* === Typography === */
+	--font-hand: 'Caveat', cursive;
+	--font-display: 'Playfair Display', serif;
+	--font-body: 'Inter', system-ui, sans-serif;
+
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-lg: 1.125rem;
+	--text-xl: 1.25rem;
+	--text-2xl: 1.5rem;
+	--text-3xl: 1.875rem;
+	--text-4xl: 2.25rem;
+	--text-5xl: 3rem;
+	--text-6xl: 3.75rem;
+	--text-7xl: 5rem;
+	--text-8xl: 6.5rem;
+
+	--leading-tight: 1.1;
+	--leading-snug: 1.3;
+	--leading-normal: 1.6;
+	--leading-relaxed: 1.8;
+
+	/* === Spacing === */
+	--space-1: 0.25rem;
+	--space-2: 0.5rem;
+	--space-3: 0.75rem;
+	--space-4: 1rem;
+	--space-6: 1.5rem;
+	--space-8: 2rem;
+	--space-10: 2.5rem;
+	--space-12: 3rem;
+	--space-16: 4rem;
+	--space-20: 5rem;
+	--space-24: 6rem;
+	--space-32: 8rem;
+	--space-40: 10rem;
+	--space-section: clamp(4rem, 10vw, 8rem);
+
+	/* === Layout === */
+	--max-width: 1400px;
+	--content-width: 1100px;
+	--narrow-width: 800px;
+	--gutter: clamp(1rem, 4vw, 3rem);
+
+	/* === Borders === */
+	--border-sketch: 2px solid var(--color-ink-primary);
+	--border-pencil: 1px solid var(--color-ink-light);
+	--radius-rough: 3px 8px 5px 10px;
+	--radius-smooth: 8px;
+
+	/* === Shadows === */
+	--shadow-paper: 2px 3px 8px rgba(0, 0, 0, 0.08);
+	--shadow-lifted: 4px 6px 16px rgba(0, 0, 0, 0.12);
+
+	/* === Transitions === */
+	--ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+	--ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+	--duration-fast: 200ms;
+	--duration-normal: 400ms;
+	--duration-slow: 800ms;
+
+	/* === Z-index === */
+	--z-base: 1;
+	--z-above: 10;
+	--z-nav: 100;
+	--z-overlay: 200;
+	--z-modal: 300;
+	--z-cursor: 9999;
+}
