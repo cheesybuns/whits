@@ -1,5 +1,5 @@
 {
-	"name": "whits-sveltekit",
+	"name": "whits",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -13,11 +13,16 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^7.0.0",
+		"@sveltejs/adapter-static": "^3.0.10",
 		"@sveltejs/kit": "^2.50.2",
 		"@sveltejs/vite-plugin-svelte": "^6.2.4",
 		"svelte": "^5.51.0",
 		"svelte-check": "^4.3.6",
 		"typescript": "^5.9.3",
 		"vite": "^7.3.1"
+	},
+	"dependencies": {
+		"gsap": "^3.14.2",
+		"lenis": "^1.3.17"
 	}
 }
